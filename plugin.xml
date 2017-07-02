@@ -7,7 +7,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     <name>Migrate WebView Data</name>
     <description>Migrate LocalStorage data from UIWebView to WKWebView</description>
     <license>Apache 2.0</license>
-    <keywords>cordova,uiwebview,wkwebview,localstorage</keywords>
+    <keywords>ecosystem:cordova,cordova,cordova-ios,uiwebview,wkwebview,localstorage</keywords>
     <repo>https://github.com/maklesoft/cordova-plugin-migrate-localstorage.git</repo>
     <issue>https://github.com/maklesoft/cordova-plugin-migrate-localstorage/issues/</issue>
 

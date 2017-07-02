@@ -11,7 +11,9 @@
   "repository": "https://github.com/maklesoft/cordova-plugin-migrate-localstorage.git",
   "issue": "https://github.com/maklesoft/cordova-plugin-migrate-localstorage/issues/",
   "keywords": [
+    "ecosystem:cordova",
     "cordova",
+    "cordova-ios",
     "uiwebview",
     "wkwebview",
     "localstorage"
