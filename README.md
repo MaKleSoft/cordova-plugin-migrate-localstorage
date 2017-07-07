@@ -34,4 +34,4 @@ One of the drawbacks of migrating Cordova apps to `WKWebView` is that LocalStora
 not persist between the two. Unfortunately,
 [cordova-plugin-wkwebview-engine](https://github.com/apache/cordova-plugin-wkwebview-engine)
 does not offer a solution for this out of the box (see
-https://issues.apache.org/jira/browse/CB-11974?jql=project%20%3D%20CB%20AND%20labels%20%3D%20wkwebview-known-issues).
+https://issues.apache.org/jira/browse/CB-11974).
