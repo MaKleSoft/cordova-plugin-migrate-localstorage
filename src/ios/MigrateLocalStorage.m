@@ -51,9 +51,13 @@
 
     target = [target stringByAppendingPathComponent:@"WebsiteData/LocalStorage/file__0.localstorage"];
 
-    [self copyFrom:original to:target];
-    [self copyFrom:[original stringByAppendingString:@"-shm"] to:[target stringByAppendingString:@"-shm"]];
-    [self copyFrom:[original stringByAppendingString:@"-wal"] to:[target stringByAppendingString:@"-wal"]];
+    // Only copy data if no existing localstorage data exists yet for wkwebview
+    if (![[NSFileManager defaultManager] fileExistsAtPath:target]) {
+        NSLog(@"No existing localstorage data found for WKWebView. Migrating data from UIWebView");
+        [self copyFrom:original to:target];
+        [self copyFrom:[original stringByAppendingString:@"-shm"] to:[target stringByAppendingString:@"-shm"]];
+        [self copyFrom:[original stringByAppendingString:@"-wal"] to:[target stringByAppendingString:@"-wal"]];
+    }
 }
 
 - (void)pluginInitialize
