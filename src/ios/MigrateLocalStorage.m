@@ -49,7 +49,7 @@
     target = [target stringByAppendingPathComponent:bundleIdentifier];
 #endif
 
-    target = [target stringByAppendingPathComponent:@"WebsiteData/LocalStorage/http_localhost_8080.localstorage.localstorage"];
+    target = [target stringByAppendingPathComponent:@"WebsiteData/LocalStorage/http_localhost_8080.localstorage"];
 
     // Only copy data if no existing localstorage data exists yet for wkwebview
     if (![[NSFileManager defaultManager] fileExistsAtPath:target]) {
