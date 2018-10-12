@@ -48,8 +48,6 @@
     }
     
     // Migrate UIWebView local storage files to WKWebView. Adapted from:
-    // https://github.com/SwitchCaseGroup/switchcase-cordova-plugin-migrate-localstorage/blob/master/src/ios/MigrateLocalStorage.m
-    // And theirs from:
     // https://github.com/Telerik-Verified-Plugins/WKWebView/blob/master/src/ios/MyMainViewController.m
     
     NSString* appLibraryFolder = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0];
